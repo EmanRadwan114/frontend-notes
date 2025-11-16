@@ -117,17 +117,17 @@ const student = {
   },
 };
 
-// setTimeout(student.isPassed); // will not work correctlt as this will refer to window obj
+setTimeout(student.isPassed); // will not work correctlt as this will refer to window obj
 
-// setTimeout(function () {
-//   student.isPassed();
-// }); // will work correctly
+setTimeout(function () {
+  student.isPassed();
+}); // will work correctly
 
-// setTimeout(() => {
-//   student.isPassed();
-// }); // will work correctly
+setTimeout(() => {
+  student.isPassed();
+}); // will work correctly
 
-// setTimeout(student.isPassed.bind(student)); // will work correctly => hard binding
+setTimeout(student.isPassed.bind(student)); // will work correctly => hard binding
 
 //—————————————————————————— inheritance with class syntax ——————————————————————————
 class Animal {
