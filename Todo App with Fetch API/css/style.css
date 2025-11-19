@@ -1,0 +1,114 @@
+/*~ ---------------------------general styles--------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: rgb(159, 44, 105);
+  --bgColor: rgb(243, 233, 215);
+  --cardBgColor: rgb(244, 241, 236);
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
+button {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/*~ ---------------------------header--------------------------- */
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+
+.add-btn-container {
+  text-align: end;
+  margin-bottom: 2rem;
+}
+
+.add-btn {
+  background-color: var(--primaryColor);
+  color: white;
+  border: none !important;
+}
+
+input.todo-input {
+  background-color: rgb(245, 242, 242);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+input.todo-input:focus-within {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*~ ---------------------------todos container--------------------------- */
+.card {
+  padding: 0.85rem;
+  background-color: var(--cardBgColor);
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  width: calc(100% / 3 - (0.85px * 11));
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.todo-content {
+  margin-bottom: 0.85rem;
+}
+
+.btns-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: background-color 500ms;
+}
+
+.btn:hover:not(.add-btn) {
+  background-color: rgb(250, 249, 249);
+}
+
+.complete-btn {
+  color: rgb(3, 3, 74);
+}
+
+.del-btn {
+  color: darkred;
+}
+
+.empty-list {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+}
