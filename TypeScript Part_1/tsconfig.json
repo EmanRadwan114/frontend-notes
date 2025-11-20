@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "es2015",
+    "target": "esnext",
+    // "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true
+  },
+  "include": ["src/**/*"]
+}
